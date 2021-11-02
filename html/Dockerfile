@@ -7,5 +7,3 @@ COPY . /usr/local/apache2/htdocs/
 RUN echo "ServerName localhost" >> /usr/local/apache2/conf/httpd.conf
 
 EXPOSE 80
-
-CMD ["/usr/sbin/apache2ctl","-D","FOREGROUND"]
