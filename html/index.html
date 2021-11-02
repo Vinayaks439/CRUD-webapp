@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch API Demo</title>
+</head>
+<body>
+    <form id="form">
+        <label for="input">Input</label>
+        <input type="text" required name="api-input" id="api-input">
+        <label for="type">Type</label>
+        <select name="api-call-type" id="api-call-type">
+            <option value="get">GET</option>
+            <option value="post">POST</option>
+            <option value="put">PUT</option>
+            <option value="delete">DELETE</option>
+        </select>
+        <button id="submit">Submit</button>
+    </form>
+
+    <h3>Output</h3>
+    <div id="api-output">
+
+    </div>
+
+    <script type="text/javascript" src="./script.js"></script>
+</body>
+</html>
