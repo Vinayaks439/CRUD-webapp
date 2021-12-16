@@ -5,7 +5,8 @@
 replicaCount: 1
 
 image:
-  repository: nginx
+  frontend: myfrontend
+  repository: mybackend
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
   tag: ""
