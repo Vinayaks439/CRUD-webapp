@@ -18,4 +18,4 @@ RUN npm install \
     && npm install @opentelemetry/instrumentation-http \
     && export OTEL_SERVICE_NAME="apm-test"
     
-CMD npm start
+ENTRYPOINT npm start
