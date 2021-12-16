@@ -5,9 +5,9 @@ LABEL version="1.0.0"
 RUN mkdir sad \
     && echo 'http://dl-cdn.alpinelinux.org/alpine/v3.6/main' >> /etc/apk/repositories \ 
     && echo 'http://dl-cdn.alpinelinux.org/alpine/v3.6/community' >> /etc/apk/repositories \
-    && apk upgrade --update && && apk update && apk add --no-cache mongodb=3.4.4-r0
+    && apk upgrade --update && apk update && apk add --no-cache mongodb=3.4.4-r0
 
-RUN mongod
+CMD [ "mongod", "--bind_ip", "0.0.0.0" ]
 
 COPY . /sad
 
